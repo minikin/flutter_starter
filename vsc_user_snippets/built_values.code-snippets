@@ -1,0 +1,86 @@
+{
+  "Built Value Header": {
+    "prefix": "blth",
+    "scope": "dart, flutter",
+    "body": [
+      "library ${1};",
+      "",
+      "import 'dart:convert';",
+      "",
+      "import 'package:built_collection/built_collection.dart';",
+      "import 'package:built_value/built_value.dart';",
+      "import 'package:built_value/serializer.dart';",
+      "",
+      "part '${1}.g.dart';"
+    ],
+    "description": "Built Value Imports and File Header"
+  },
+  "Built Value": {
+    "prefix": "blt",
+    "scope": "dart, flutter",
+    "body": [
+      "abstract class ${1} implements Built<${1}, ${1}Builder> {",
+      "\t${0:// fields go here}",
+      "",
+      "\t${1}._();",
+      "",
+      "\tfactory ${1}([void Function(${1}Builder) updates]) = _$${1};",
+      "}"
+    ],
+    "description": "Built Value Class"
+  },
+  "Built Value Serializable": {
+    "prefix": "blts",
+    "scope": "dart, flutter",
+    "body": [
+      "abstract class ${1} implements Built<${1}, ${1}Builder> {",
+      "\t${0:// fields go here}",
+      "",
+      "\t${1}._();",
+      "",
+      "\tfactory ${1}([void Function(${1}Builder) updates]) = _$${1};",
+      "",
+      "\tString toJson() {",
+      "\t\treturn json.encode(serializers.serializeWith(${1}.serializer, this));",
+      "\t}",
+      "",
+      "\tstatic ${1} fromJson(String jsonString) {",
+      "\t\treturn serializers.deserializeWith(${1}.serializer, json.decode(jsonString));",
+      "\t}",
+      "",
+      "\tstatic Serializer<${1}> get serializer => _$${1/(^[A-z]{1})/${1:/downcase}/}Serializer;",
+      "}"
+    ],
+    "description": "Serializable Built Value Class"
+  },
+  "Built Value Serializable Enum": {
+    "prefix": "bltes",
+    "scope": "dart, flutter",
+    "body": [
+      "class ${1} extends EnumClass {",
+      "\t${0:// fields go here}",
+      "",
+      "\tstatic Serializer<${1}> get serializer => _$${1/(^[A-z]{1})/${1:/downcase}/}Serializer;",
+      "",
+      "\tconst ${1}._(String name) : super(name);",
+      "\tstatic BuiltSet<${1}> get values => _$${1/(^[A-z]{1})/${1:/downcase}/}Values;",
+      "\tstatic ${1} valueOf(String name) => _$${1/(^[A-z]{1})/${1:/downcase}/gi}ValueOf(name);",
+      "}"
+    ],
+    "description": "Serializable Built Value Enum"
+  },
+  "Built Value Enum": {
+    "prefix": "blte",
+    "scope": "dart, flutter",
+    "body": [
+      "class ${1} extends EnumClass {",
+      "\t${0:// fields go here}",
+      "",
+      "\tconst ${1}._(String name) : super(name);",
+      "\tstatic BuiltSet<${1}> get values => _$${1/(^[A-z]{1})/${1:/downcase}/}Values;",
+      "\tstatic ${1} valueOf(String name) => _$${1/(^[A-z]{1})/${1:/downcase}/gi}ValueOf(name);",
+      "}"
+    ],
+    "description": "Built Value Enum"
+  }
+}
