@@ -3,13 +3,13 @@
 ## Contents
 
 - [Contents](#contents)
-- [📋 Documentation](#-documentation)
-- [🎉Pubs](#-pubs)
-- [🎯 Courses](#-courses)
-- [💥 Visual Studio Code Extensions](#-visual-studio-code-extensions)
-- [⛑ Tips & Tricks](#%e2%9b%91-tips-tricks)
-- [🌍 Other Recourse](#-other-recourses)
-- [📄 License](#-license)
+  - [📋 Documentation](#-documentation)
+  - [🎉Pubs](#-pubs)
+  - [🎯 Courses](#-courses)
+  - [💥 Visual Studio Code Extensions](#-visual-studio-code-extensions)
+  - [⛑ Tips & Tricks](#%e2%9b%91-tips-tricks)
+  - [🌍 Other Recourse](#-other-recourses)
+  - [📄 License](#-license)
 
 ### 📋 Documentation
 
