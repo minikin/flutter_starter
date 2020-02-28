@@ -3,12 +3,13 @@
 ## Contents
 
 - [Contents](#contents)
-- [📋 Documentation](#-documentation)
-- [🎉Pubs](#-pubs)
-- [🎯 Courses](#-courses)
-- [🎯 Courses](#-courses)
-- [⛑ Tips & Tricks](#%e2%9b%91-tips-tricks)
-- [📄 License](#%f0%9f%93%84-license)
+  - [📋 Documentation](#-documentation)
+  - [🎉Pubs](#-pubs)
+  - [🎯 Courses](#-courses)
+  - [💥 Visual Studio Code Extensions](#-visual-studio-code-extensions)
+  - [⛑ Tips & Tricks](#%e2%9b%91-tips-tricks)
+  - [🌍 Other Recourse](#-other-recourses)
+  - [📄 License](#-license)
 
 ### 📋 Documentation
 
@@ -52,7 +53,7 @@
 - if you have any nasty errors run `flutter clean` and delete `.dart_tool` folder (You may need to get your packages and regenerate your `build values`)
 - use user snippets for visual studio code. [Like this ones]()
 
-### Other recourses
+###  🌍 Other recourses
 
 **WIP**
 
