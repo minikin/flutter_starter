@@ -1,4 +1,4 @@
-# Flutter
+# Flutter Starter
 
 ## Contents
 
@@ -57,3 +57,5 @@
 **WIP**
 
 ### 📄 License
+
+Flutter Starter is available under the MIT license. See the [LICENSE](https://github.com/minikin/flutter_starter/blob/master/LICENSE) file for more info.
